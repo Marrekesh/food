@@ -217,7 +217,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //calc
 
-    const
+    const element = document.querySelector('.calculating__result span');
+    
 
 
 })
