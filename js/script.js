@@ -1,18 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
+import tabs from './modules/tabs';
+import slider from './modules/slider';
+import modal from './modules/modal';
+import forms from './modules/forms';
+import card from './modules/card';
+import calc from './modules/calc';
 
-    const tabs = require('./modules/tabs');
-    const slider = require('./modules/slider');
-    const modal = require('./modules/modal');
-    const forms = require('./modules/forms');
-    const card = require('./modules/card');
-    const calc = require('./modules/calc');
+window.addEventListener('DOMContentLoaded', () => {
 
     tabs();
-    slider();
-    modal();
+    modal('[data-modal]', '.modal', '.modal__close');
     forms();
     card();
     calc();
+    slider();
 
 
 

@@ -3,8 +3,8 @@ function slider() {
         prev = document.querySelector('.offer__slider-prev'),
         next = document.querySelector('.offer__slider-next');
     let count = 1;
-        total = document.querySelector('#total'),
-        current = document.querySelector('#current');
+    let total = document.querySelector('#total');
+    let current = document.querySelector('#current');
 
     showSlide(count)
 
@@ -52,4 +52,4 @@ function slider() {
 
 }
 
-module.exports = slider;
+export default slider;

@@ -55,4 +55,4 @@ function card() {
 
 }
 
-module.exports = card;
+export default card;
