@@ -1,3 +1,6 @@
+require('es6-promise').polyfill();
+import 'nodelist-foreach-polyfill';
+
 import tabs from './modules/tabs';
 import slider from './modules/slider';
 import modal from './modules/modal';
@@ -9,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     tabs();
     modal('[data-modal]', '.modal', '.modal__close');
-    forms();
+    forms('.modal');
     card();
     calc();
     slider();

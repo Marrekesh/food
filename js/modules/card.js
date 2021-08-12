@@ -1,3 +1,5 @@
+import {getCard} from '../services/services';
+
 function card() {
     class AddCard {
         constructor(src, alt, title, descr, price, parentSelector, ...classes) {
@@ -35,16 +37,16 @@ function card() {
         }
     };
  
-    async function getCard(url) {
+    // async function getCard(url) {
 
-        let res = await fetch(url);
+    //     let res = await fetch(url);
     
-        if (!res.ok) {
-            throw new Error(`Could not fetch ${url}, status: ${res.status}`);
-        }
+    //     if (!res.ok) {
+    //         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+    //     }
     
-    return await res.json();
-}
+    //     return await res.json();
+    // }
  
     getCard('http://localhost:3000/menu')
     .then(data => {
